@@ -12,10 +12,10 @@ header img{
 }
 h1{
   position: absolute;
-  top: 90%;
-  right: 32.5%;
-  text-transform: capitalize;
-  transform: translate(25%,0%);
+  top: 82%;
+  left: -12.6%;
+  text-transform: uppercase;
+  transform: translate(24%,0%);
   font-size: 30px;
   color: white;
   font-family: 'Martel', serif;
@@ -54,47 +54,129 @@ a img{
   width: 50px;
 }
 li a:hover{
-  background-color: #4AA538;
+  background-color: #777;
   color: white;
 }
 button{
   position: relative;
   background-color: #1D7299;
-  left: 33%;
-  margin-bottom: 2%;
+  left: 23%;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #000000;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 button a{
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: 'Martel', serif;
   color: white;
   font-size: 40px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #008E8E;
+}
+button:hover a {
+  padding-right: 25px;
+}
+button:hover a:after {
+  opacity: 1;
+  right: -20px;
 }
 #telechargement{
-  margin: 2%;
+  margin: 4%;
   text-align: center;
   font-family: 'Martel', serif;
   text-transform: capitalize;
   color: black;
   font-size: 25px;
 }
+.cadre img{
+  width: 100%;
+}
+.cadre{
+  width: 100%;
+}
 #competence{
-  margin-bottom: 2%;
-  text-decoration: underline;
+  margin-bottom: 4%;
+  margin-top: 4%;
   text-align: center;
   font-family: 'Martel', serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: black;
   font-size: 25px;
 }
 #depanage{
-  margin-left: 1%;
-  margin-bottom: 2%;
-  text-decoration: underline;
+  padding: 2%;
   font-family: 'Martel', serif;
   text-transform: capitalize;
+  font-size: 18px;
+  text-align: center;
 }
 #text{
-  margin-left: 3%;
-  margin-right: 2%;
+  padding: 1.5%;
+  font-family: 'Martel', serif;
+  font-size: 13px;
+  text-align: center;
+}
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 100px;
+}
+.horizontal-scroll-wrapper {
+  ...
+  transform: rotate(-90deg);
+  transform-origin: right top;
+}
+.horizontal-scroll-wrapper > div {
+  ...
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+div.scrollmenu {
+  background-color: #E3ECF5;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  background-color: #1D7299;
+  border: 1px solid white;
+  display: inline-block;
+  color: white;
+  font-family: 'Martel', serif;
+  font-size: 55px;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+.divimage{
+  width: 100%;
+}
+.ageval img{
+  width: 100%;
+}
+.psa img{
+  width: 100%;
 }
