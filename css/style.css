@@ -116,13 +116,19 @@ button:hover a:after {
   width: 100%;
 }
 #competence{
-  margin-bottom: 4%;
-  margin-top: 4%;
-  text-align: center;
+  padding-top: 25px;
+  padding-left: 25px;
   font-family: 'Martel', serif;
-  text-transform: uppercase;
   color: #6c9286;
-  font-size: 24px;
+  text-transform: capitalize;
+  font-size: 70px;
+}
+.competence{
+  margin-top: 5%;
+  background-color: white;
+  width: 75%;
+  height: 120px;
+  border-top-right-radius: 200px;
 }
 #depanage{
   padding: 2%;
@@ -137,14 +143,28 @@ button:hover a:after {
   font-size: 18px;
   text-align: center;
 }
-
+#exp{
+  padding-top: 25px;
+  padding-left: 25px;
+  font-family: 'Martel', serif;
+  color: #6c9286;
+  text-transform: capitalize;
+  font-size: 70px;
+}
+.exp{
+  margin-top: 5%;
+  background-color: white;
+  width: 75%;
+  height: 170px;
+  border-top-right-radius: 200px;
+}
 div.scrollmenu {
   background-color: #289dd2;
   overflow: auto;
   white-space: nowrap;
 }
 
-div.scrollmenu a {
+div.scrollmenu p {
   display: inline-block;
   color: white;
   width: 100%;
