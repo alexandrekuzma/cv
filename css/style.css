@@ -110,7 +110,11 @@ button:hover a:after {
   font-family: 'Martel', serif;
   text-transform: capitalize;
   color: #365b6d;
+<<<<<<< HEAD
   font-size: 77px;
+=======
+  font-size: 30.3px;
+>>>>>>> c5ab476eaac7b01c8f0714d4665a525eb149178c
 }
 
 #competence{
