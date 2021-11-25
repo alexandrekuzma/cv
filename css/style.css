@@ -21,8 +21,12 @@ h1{
   font-family: 'Martel', serif;
 }
 nav{
+  padding: 15px 0;
   text-transform: capitalize;
-  background-color: #289dd2;
+  background-color: #365b6d;
+  box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
+  -webkit-box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
+  -moz-box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
 }
 nav ul{
   letter-spacing: -0.25rem;
@@ -30,7 +34,6 @@ nav ul{
 nav li{
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: #289dd2;
   text-align: center;
   letter-spacing: normal;
   display: inline-block;
@@ -107,14 +110,9 @@ button:hover a:after {
   font-family: 'Martel', serif;
   text-transform: capitalize;
   color: #365b6d;
-  font-size: 30.3px;
+  font-size: 77px;
 }
-.cadre img{
-  width: 100%;
-}
-.cadre{
-  width: 100%;
-}
+
 #competence{
   padding-top: 25px;
   padding-left: 25px;
@@ -130,12 +128,121 @@ button:hover a:after {
   height: 120px;
   border-top-right-radius: 200px;
 }
-#depanage{
-  padding: 2%;
-  font-family: 'Martel', serif;
+/* tabulation */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.fondu{
+  width: 100%;
+}
+.fondu img{
+  width: 95%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+}
+.fondu p{
+  width: 95%;
+  padding: 2.5%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 25px;
+}
+.fondu2{
+  width: 100%;
+}
+.fondu2 img{
+  width: 95%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+}
+.fondu2 p{
+  width: 95%;
+  padding: 2.5%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 25px;
+}
+.tabs {
+  padding-top: 2.5%;
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.tabs [class^="tab"] label,
+.tabs [class*=" tab"] label {
+  padding: 4%;
+  cursor: pointer;
+  display: block;
+  border: 1px solid white;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  font-size: 50px;
   text-transform: capitalize;
-  font-size: 18px;
-  text-align: center;
+  font-family: 'Martel', serif;
+  line-height: 70px;
+}
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
+  border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+.tabs [class*=" tab"] [type="radio"]:hover,
+.tabs [class*=" tab"] [type="radio"]:focus {
+  border-bottom: 15px solid #289dd2;
+}
+.tabs [class^="tab"] [type="radio"]:checked,
+.tabs [class*=" tab"] [type="radio"]:checked {
+  border-bottom: 15px solid #289dd2;
+}
+.tabs [class^="tab"] [type="radio"]:checked + div,
+.tabs [class*=" tab"] [type="radio"]:checked + div {
+  opacity: 1;
+}
+.tabs [class^="tab"] [type="radio"] + div,
+.tabs [class*=" tab"] [type="radio"] + div {
+  display: block;
+  opacity: 0;
+  padding: 2rem 0;
+  width: 90%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+ }
+ .tabs .tab-2 {
+  width: 50%;
+}
+.tabs .tab-2 [type="radio"] + div {
+  width: 200%;
+  margin-left: 200%;
+}
+.tabs .tab-2 [type="radio"]:checked + div {
+  margin-left: 0;
+}
+.tabs .tab-2:last-child [type="radio"] + div {
+  margin-left: 100%;
+}
+.tabs .tab-2:last-child [type="radio"]:checked + div {
+  margin-left: -100%;
 }
 #text{
   padding: 1.5%;
@@ -159,7 +266,7 @@ button:hover a:after {
   border-top-right-radius: 200px;
 }
 div.scrollmenu {
-  background-color: #289dd2;
+  background-color: #6c9286;
   overflow: auto;
   white-space: nowrap;
 }

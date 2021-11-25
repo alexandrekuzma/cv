@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Martel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
   </head>
@@ -23,50 +23,39 @@
     <button>
       <a href="image/KuzmaAlexandre.pdf" target="_blank">téléchargement</a>
     </button>
+    <!-- competence https://kyusuf.com/post/completely-css-tabs/-->
     <div class="competence">
       <h3 id="competence">compétences</h3>
     </div>
-    <div class="cadre">
-        <img src="https://image.freepik.com/photos-gratuite/technicien-reparant-ordinateur-materiel-informatique-reparation-mise-niveau-technologie_1150-8861.jpg" alt="">
-      <p id="depanage">dépanneur installateur informatique</p>
-      <ul>
-        <li id="text">
-          Changer ou réparer un élément ou un ensemble défectueux
-        </li>
-        <li id="text">
-          Réaliser les opérations de réglage sur les matériels et équipements
-        </li>
-        <li id="text">
-          Renseigner les supports de suivi d'intervention et transmettre les informations
-        </li>
-        <li id="text">
-          Installer, entretenir et dépanner des équipements informatiques
-        </li>
-      </ul>
-    </div>
-    <div class="cadre">
-      <img src="https://th.bing.com/th/id/R.46affa39f9ecbb83c3bb113f680ec52c?rik=%2b8MLzRP97hfR7g&riu=http%3a%2f%2fwww.groupe-mi.fr%2fimages%2fdesign%2fheader%2fequipement_electrique.jpg&ehk=VisKove7uAmLuVql4yrmm5GejYURUAkFfiz7NiGVSiI%3d&risl=&pid=ImgRaw&r=0" alt="">
-      <p id="depanage">électrotechnique et automatisme</p>
-      <ul>
-        <li id="text">
-          Changer ou réparer un élément ou un ensemble défectueux
-        </li>
-        <li id="text">
-          Réaliser les opérations de réglage sur les matériels et équipements
-        </li>
-        <li id="text">
-          Renseigner les supports de suivi d'intervention et transmettre les informations
-        </li>
-        <li id="text">
-          Installer, entretenir et dépanner des équipements informatiques
-        </li>
-      </ul>
-    </div>
-    <div class="">
-      <div class="exp">
-        <h4 id="exp">éxperiences professionnelle</h4>
+
+    <div class="tabs">
+      <div class="tab-2">
+        <label for="tab2-1">maintenance informatique</label>
+        <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+        <div class="fondu">
+          <img src="https://image.freepik.com/photos-gratuite/technicien-reparant-ordinateur-materiel-informatique-reparation-mise-niveau-technologie_1150-8861.jpg" alt="">
+          <p>Changer ou réparer un élément ou un ensemble défectueux</p>
+          <p>Réaliser les opérations de réglage sur les matériels et équipements</p>
+          <p>Renseigner les supports de suivi d'intervention et transmettre les informations</p>
+          <p>Installer, entretenir et dépanner des équipements informatiques</p>
+        </div>
       </div>
-      <!-- scrolling -->
+      <div class="tab-2">
+        <label for="tab2-2">électrotechnique et automatisme</label>
+        <input id="tab2-2" name="tabs-two" type="radio">
+        <div class="fondu2">
+          <p><img src="https://th.bing.com/th/id/R.46affa39f9ecbb83c3bb113f680ec52c?rik=%2b8MLzRP97hfR7g&riu=http%3a%2f%2fwww.groupe-mi.fr%2fimages%2fdesign%2fheader%2fequipement_electrique.jpg&ehk=VisKove7uAmLuVql4yrmm5GejYURUAkFfiz7NiGVSiI%3d&risl=&pid=ImgRaw&r=0" alt=""></p>
+          <p>programmation en ladder</p>
+          <p>intervention et dépannages industriels </p>
+          <p>réalisation et lecture de plan électrotechnique</p>
+          <p>création et suivie d'un cahier des charges</p>
+        </div>
+      </div>
+    </div>
+    <!-- scrolling -->
+    <div class="exp">
+      <h4 id="exp">expérience professionnelle</h4>
+    </div>
       <div class="scrollmenu">
         <div class="">
           <p>2021 à aujourd'hui</p>
@@ -79,7 +68,7 @@
           <img src="http://www.ageval.net/themes/site_themes/ageval/default_site/img/ageval/logo.png" alt="ageval">
           <img src="https://th.bing.com/th/id/AkPfravw6sMB4vQ480x360?&rs=1&pid=ImgDet" alt="4saison">
           <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/b3/6a/ee/pizzeria-lorenzo.jpg" alt="pizzeria lorenzo">
-          <img src="https://th.bing.com/th/id/R.28df8bb4dfbb2c846c035fc8f60d85a9?rik=dziM%2bXj31N8NmQ&riu=http%3a%2f%2fwww.kelmagasin.com%2fimg%2flogo%2fspeed-burger.gif&ehk=k%2feFcGrKHDQsy9gfR1QxiLuKQUJaulbgPL6dHjRNlho%3d&risl=&pid=ImgRaw&r=0" alt="speed burger">
+          <img src="https://speed-burger.com/assets/svg/logo-sb.svg" alt="speed burger">
           <img src="https://www.andlil.com/wp-content/uploads/2013/07/logo-psa.jpg" alt="psa">
         </div>
         <div class="poste">
@@ -96,15 +85,15 @@
         <ul>
           <li>
             <a href="#hautpage"><span class="textekill">haut de la page</span></a>
-            <a href="#hautpage"><img src="image/fleche.svg" alt="logo"></a>
+            <a href="#hautpage"><img src="image/fleche.png" alt="logo"></a>
           </li>
           <li>
             <a href="#contact"><span class="textekill">contact</span></a>
-            <a href="#contact"><img src="image/email.svg" alt="logo"></a>
+            <a href="#contact"><img src="image/email.png" alt="logo"></a>
           </li>
           <li>
             <a href="menu"><span class="textekill">menu</span></a>
-            <a href="retour en haut"><img src="image/menu.svg" alt="logo"></a>
+            <a href="retour en haut"><img src="image/menu.png" alt="logo"></a>
           </li>
         </ul>
       </nav>
