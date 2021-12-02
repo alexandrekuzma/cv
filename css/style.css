@@ -406,3 +406,46 @@ nav> ul li:hover .sous{
   font-size: 60px;
   font-family: 'Martel', serif;
 }
+.sous2{
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  position: absolute;
+  background-color: #313131;
+  top: -600%;
+  width: 80%;
+  left: 10%;
+  height: 380px;
+  border-radius: 70px;
+}
+nav> ul li:hover .sous2{
+  display: block;
+}
+.sous2 li{
+  margin-top: 4%;
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.sous2 a{
+  border-bottom: none;
+}
+
+.textnav2{
+  font-size: 40px;
+  font-family: 'Martel', serif;
+}
+#portf{
+  padding-top: 25px;
+  padding-left: 25px;
+  font-family: 'Martel', serif;
+  color: #6c9286;
+  text-transform: capitalize;
+  font-size: 70px;
+}
+.portf{
+  margin-top: 10%;
+  background-color: white;
+  width: 75%;
+  height: 120px;
+  border-top-right-radius: 200px;
+}
