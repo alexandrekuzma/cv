@@ -45,8 +45,6 @@ nav ul{
   letter-spacing: -0.25rem;
 }
 nav li{
-  padding-top: 1%;
-  padding-bottom: 1%;
   text-align: center;
   letter-spacing: normal;
   display: inline-block;
@@ -68,6 +66,8 @@ a img{
 li a:hover{
   background-color: #008E8E;
   color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .centrbt{
   text-align: center;
@@ -398,11 +398,13 @@ box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
   text-transform: capitalize;
 }
 .sous{
+  width: 100%;
   display: none;
   box-shadow: 0px 1px 2px #ccc;
   position: absolute;
   background-color: #365b6d;
-  top: -237%;
+  bottom: 100%;
+  left: 0;
   box-shadow: 0px -7px 7px 1px rgb(0 0 0 / 71%);
   -webkit-box-shadow: 0px -7px 7px 1px rgb(0 0 0 / 71%);
   -moz-box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
@@ -497,6 +499,7 @@ nav ul{
   display: block;
   font-family: 'Martel', serif;
   font-size: 150%;
+  padding: 2%;
 }
 .textnav2 {
   font-size: 197%;
@@ -506,14 +509,15 @@ a img{
   display: none;
 }
 .sous {
-  top: 104%;
+  left: auto;
+  bottom: -258%;
   max-width: 427PX;
   -webkit-box-shadow: 0px 7px 7px rgba(50, 50, 50, 1);
   -moz-box-shadow:    0px 7px 7px rgba(50, 50, 50, 1);
   box-shadow:         0px 7px 7px rgba(50, 50, 50, 1);
 }
 .sous2 {
-  top: 300%;
+  bottom: -163px;
   width: 36%;
   left: 25%;
   border-radius: 19%;
@@ -572,4 +576,6 @@ button a{
   padding: 0.5%;
   font-size: 150%;
 }
+.tabs {
+    padding-top: 0%;
 }
