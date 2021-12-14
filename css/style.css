@@ -75,16 +75,14 @@ li a:hover{
 button{
   text-decoration: none;
   padding: 5px;
-  font-family: 'Martel', serif;
-  font-size: 1em;
-  color: #FFFFFF;
   background-color: #289dd2;
-  border-radius: 24px;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  box-shadow: 0px 2px 3px #444444;
-  -webkit-box-shadow: 0px 2px 3px #444444;
-  -moz-box-shadow: 0px 2px 3px #444444;
+  border-radius: 37px;
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  border: 3px solid #365b6d;
+  box-shadow: 9px 5px 6px #444444;
+  -webkit-box-shadow: 9px 5px 6px #444444;
+  -moz-box-shadow: 9px 5px 6px #444444;
   }
 button a{
   margin: 12px;
@@ -400,13 +398,11 @@ box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
   text-transform: capitalize;
 }
 .sous{
-  width: 100%;
   display: none;
   box-shadow: 0px 1px 2px #ccc;
   position: absolute;
   background-color: #365b6d;
-  bottom: 100%;
-  left: 0;
+  top: -237%;
   box-shadow: 0px -7px 7px 1px rgb(0 0 0 / 71%);
   -webkit-box-shadow: 0px -7px 7px 1px rgb(0 0 0 / 71%);
   -moz-box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
@@ -429,6 +425,28 @@ nav> ul li:hover .sous{
   font-size: 150%;
   font-family: 'Martel', serif;
 }
+.sous2{
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  position: absolute;
+  background-color: #313131;
+  top: -600%;
+  width: 91%;
+  left: 5%;
+  border-radius: 12%;
+}
+nav> ul li:hover .sous2{
+  display: block;
+}
+.sous2 li{
+  margin-top: 4%;
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.sous2 a{
+  border-bottom: none;
+}
 
 .textnav2{
   font-size: 125%;
@@ -450,22 +468,6 @@ nav> ul li:hover .sous{
   height: 10%;
   border-top-right-radius: 200px;
 }
-#contact{
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 2%;
-  font-family: 'Martel', serif;
-  color: #6c9286;
-  text-transform: capitalize;
-  font-size: 155%;
-}
-.contact{
-  margin-top: 5%;
-  background-color: white;
-  width: 75%;
-  height: 10%;
-  border-top-right-radius: 200px;
-}
 .tableau{
   width: 100%;
 }
@@ -475,20 +477,6 @@ nav> ul li:hover .sous{
   font-size: 45px;
   font-family: 'Assistant', sans-serif;
   text-transform: capitalize;
-}
-.textc{
-  width: 75%;
-  background: white;
-}
-.textc a{
-  text-decoration: none;
-  display: block;
-  color: #365b6d;
-  font-size: 90%;
-  padding: 6%;
-  text-transform: capitalize;
-  font-family: 'Assistant', sans-serif;/
-  margin: 2%;
 }
 @media only screen and (min-width: 1024px) {
 nav{
@@ -519,12 +507,17 @@ a img{
   display: none;
 }
 .sous {
-  left: auto;
-  bottom: -258%;
+  top: 104%;
   max-width: 427PX;
   -webkit-box-shadow: 0px 7px 7px rgba(50, 50, 50, 1);
   -moz-box-shadow:    0px 7px 7px rgba(50, 50, 50, 1);
   box-shadow:         0px 7px 7px rgba(50, 50, 50, 1);
+}
+.sous2 {
+  top: 300%;
+  width: 36%;
+  left: 25%;
+  border-radius: 19%;
 }
 .headerh1 {
   background: rgba(0, 0, 0, 0.8);
@@ -580,6 +573,4 @@ button a{
   padding: 0.5%;
   font-size: 150%;
 }
-.tabs {
-    padding-top: 0%;
 }
