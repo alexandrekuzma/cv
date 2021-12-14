@@ -80,9 +80,6 @@ button{
   -webkit-border-radius: 37px;
   -moz-border-radius: 37px;
   border: 3px solid #365b6d;
-  box-shadow: 9px 5px 6px #444444;
-  -webkit-box-shadow: 9px 5px 6px #444444;
-  -moz-box-shadow: 9px 5px 6px #444444;
   }
 button a{
   margin: 12px;
@@ -398,11 +395,13 @@ box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
   text-transform: capitalize;
 }
 .sous{
+  width: 100%;
   display: none;
   box-shadow: 0px 1px 2px #ccc;
   position: absolute;
   background-color: #365b6d;
-  top: -237%;
+  bottom: 100%;
+  left: 0;
   box-shadow: 0px -7px 7px 1px rgb(0 0 0 / 71%);
   -webkit-box-shadow: 0px -7px 7px 1px rgb(0 0 0 / 71%);
   -moz-box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
@@ -425,33 +424,7 @@ nav> ul li:hover .sous{
   font-size: 150%;
   font-family: 'Martel', serif;
 }
-.sous2{
-  display: none;
-  box-shadow: 0px 1px 2px #ccc;
-  position: absolute;
-  background-color: #313131;
-  top: -600%;
-  width: 91%;
-  left: 5%;
-  border-radius: 12%;
-}
-nav> ul li:hover .sous2{
-  display: block;
-}
-.sous2 li{
-  margin-top: 4%;
-  float: none;
-  width: 100%;
-  text-align: center;
-}
-.sous2 a{
-  border-bottom: none;
-}
 
-.textnav2{
-  font-size: 125%;
-  font-family: 'Martel', serif;
-}
 #portf{
   padding-top: 5%;
   padding-bottom: 5%;
@@ -498,10 +471,6 @@ nav ul{
   font-family: 'Martel', serif;
   font-size: 150%;
   padding: 2%;
-}
-.textnav2 {
-  font-size: 197%;
-  font-family: 'Martel', serif;
 }
 a img{
   display: none;
@@ -572,5 +541,4 @@ button a{
   width: 49.5%;
   padding: 0.5%;
   font-size: 150%;
-}
 }
