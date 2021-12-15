@@ -12,31 +12,32 @@ body{
   width: 100%;
 }
 .headerh1 {
-  background: rgba(0, 0, 0, 0.8);
+  background-color: #289dd2;
   position: absolute;
+  border-radius: 35px;
   text-align: center;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 70%;
+  bottom: 15px;
   color: white;
-  width: 77%;
+  width: 80%;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: 100%;
-    color: white;
-    font-family: 'Martel', serif;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 100%;
+  color: white;
+  font-family: 'Martel', serif;
 }
 nav{
   position: fixed;
   bottom: 0;
+  background-color: #365b6d;
   width: 100%;
-  padding: 15px 0;
   z-index: 1;
   text-transform: capitalize;
-  background-color: #365b6d;
   box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
   -webkit-box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
   -moz-box-shadow: 0px -7px 7px 1px rgba(0,0,0,0.71);
@@ -45,6 +46,8 @@ nav ul{
   letter-spacing: -0.25rem;
 }
 nav li{
+  background-color: #365b6d;
+  padding: 10px 0;
   text-align: center;
   letter-spacing: normal;
   display: inline-block;
@@ -55,7 +58,6 @@ nav a{
   width: 100%;
   color: white;
   text-decoration: none;
-  font-family: 'Martel', serif;
 }
 .textekill{
   display: none;
@@ -63,61 +65,50 @@ nav a{
 a img{
   width: 40%;
 }
-li a:hover{
-  background-color: #008E8E;
-  color: white;
-  padding-top: 1%;
-  padding-bottom: 1%;
+nav li:hover{
+  background-color: #899F11;
 }
-.centrbt{
+.button{
   text-align: center;
-}
-button{
   text-decoration: none;
-  padding: 5px;
-  background-color: #289dd2;
-  border-radius: 37px;
-  -webkit-border-radius: 37px;
-  -moz-border-radius: 37px;
-  border: 3px solid #365b6d;
+  margin: auto;
   }
-button a{
-  margin: 12px;
+.button a{
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Martel', serif;
   color: white;
-  font-size: 155%;
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  background-color: #289dd2;
+  padding: 15PX;
+  border-radius: 25px;
 }
-button a:after {
+.button a:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
-  top: 0;
-  right: -20px;
+  right: 10px;
+  top: 13px;
   transition: 0.5s;
 }
-button:hover {
+.button a:hover {
   text-decoration: none;
-  padding: 5px;
   background-color: #899F11;
-  border-radius: 37px;
   -webkit-border-radius: 37px;
   -moz-border-radius: 37px;
-  border: 3px solid #365b6d;
-  box-shadow: 9px 5px 6px #444444;
-  -webkit-box-shadow: 9px 5px 6px #444444;
-  -moz-box-shadow: 9px 5px 6px #444444;
+  padding: 15PX 30px;
+  border-radius: 25px;
 }
 
-button:hover a:after {
+.button:hover a:after {
   opacity: 1;
-  right: -20px;
+  right: 10px;
+  top: 13px;
 }
+
 #telechargement{
   margin: 4%;
   text-align: center;
@@ -195,10 +186,10 @@ select:focus {
   cursor: pointer;
   display: block;
   border: 1px solid white;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 7%;
+  padding-bottom: 7%;
   padding-left: 2%;
-  font-size: 96%;
+  font-size: 17px;
   text-transform: capitalize;
   font-family: 'Martel', serif;
 }
@@ -419,7 +410,10 @@ nav> ul li:hover .sous{
 .sous a{
   border-bottom: none;
 }
-
+.sous a:hover{
+  border-bottom: none;
+  background-color: #899F11;
+}
 .textnav{
   font-size: 150%;
   font-family: 'Martel', serif;
@@ -451,94 +445,174 @@ nav> ul li:hover .sous{
   font-family: 'Assistant', sans-serif;
   text-transform: capitalize;
 }
-@media only screen and (min-width: 1024px) {
-nav{
-  position: sticky;
-  width: 100%;
-  padding: 0;
-  top: 0;
-  box-shadow: none;
-  -webkit-box-shadow: 0px 7px 7px rgba(50, 50, 50, 1);
-  -moz-box-shadow:    0px 7px 7px rgba(50, 50, 50, 1);
-  box-shadow:         0px 7px 7px rgba(50, 50, 50, 1);
-}
-nav ul{
-  max-width: 1280px;
-  margin: auto;
-}
-.textekill{
-  display: block;
-  font-family: 'Martel', serif;
-  font-size: 150%;
-  padding: 2%;
-}
-a img{
+input{
   display: none;
 }
-.sous {
-  top: 104%;
-  max-width: 427PX;
-  -webkit-box-shadow: 0px 7px 7px rgba(50, 50, 50, 1);
-  -moz-box-shadow:    0px 7px 7px rgba(50, 50, 50, 1);
-  box-shadow:         0px 7px 7px rgba(50, 50, 50, 1);
+
+.icon-bar {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  opacity: 0;
+  z-index: -1;
+  left: 0px;
+  top: 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.sous2 {
-  top: 300%;
-  width: 36%;
-  left: 25%;
-  border-radius: 19%;
+#icon-ba:checked ~ .icon-bar{
+  opacity: 1;
+  z-index: 1;
 }
-.headerh1 {
-  background: rgba(0, 0, 0, 0.8);
-  position: absolute;
+
+/* Style the icon bar links */
+.icon-bar a{
   text-align: center;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 82%;
+  padding: 16px;
+  transition: all 0.3s ease;
   color: white;
-  width: 60%;
+  font-size: 20px;
+  width: calc(100% / 5);
+  box-sizing: border-box;
 }
-h1 {
-  text-transform: uppercase;
-  font-size: 150%;
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
 }
-#telechargement {
-  font-size: 200%;
-  margin: 2%;
+
+.facebook {
+  background: #3B5998;
+  color: white;
 }
-button a{
-  font-size: 200%;
+
+.twitter {
+  background: #55ACEE;
+  color: white;
 }
-.competence{
-  margin-top: 2%;
-  width: 50%;
+
+.google {
+  background: #dd4b39;
+  color: white;
 }
-#competence {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 1%;
-  font-size: 200%;
+
+.linkedin {
+  background: #007bb5;
+  color: white;
 }
-.tabs [class^="tab"] label, .tabs [class*=" tab"] label {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 2%;
-  font-size: 151%;
+
+.youtube {
+  background: #bb0000;
+  color: white;
 }
-.fondu img {
-  width: 45%;
+.logo img{
+  width: 40%;
 }
-.fondu2 img {
-  width: 45%;
+@media only screen and (min-width: 1024px) {
+    nav{
+      position: sticky;
+      width: 100%;
+      margin-top: -10px;
+      top: 0px;
+      box-shadow: none;
+      -webkit-box-shadow: 0px 7px 7px rgba(50, 50, 50, 1);
+      -moz-box-shadow:    0px 7px 7px rgba(50, 50, 50, 1);
+      box-shadow:         0px 7px 7px rgba(50, 50, 50, 1);
+    }
+    .logo{
+      display: none;
+    }
+    nav ul{
+      max-width: 1280px;
+      margin: auto;
+    }
+    .textekill{
+      display: block;
+      font-family: 'Martel', serif;
+      font-size: 150%;
+      padding: 2%;
+      color: white
+    }
+    a img{
+      display: none;
+    }
+    .headerh1 {
+      background: #289dd2;;
+      position: absolute;
+      text-align: center;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      color: white;
+      width: 65%;
+    }
+    h1 {
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 150%;
+    }
+    #telechargement {
+      font-size: 200%;
+      margin: 2%;
+    }
+    button a{
+      font-size: 200%;
+    }
+    .competence{
+      margin-top: 2%;
+      width: 50%;
+    }
+    #competence {
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 1%;
+      font-size: 200%;
+    }
+    .tabs [class^="tab"] label, .tabs [class*=" tab"] label {
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 2%;
+      font-size: 151%;
+    }
+    .fondu img {
+      width: 45%;
+    }
+    .fondu2 img {
+      width: 45%;
+    }
+    .fondu p {
+      width: 49.5%;
+      padding: 0.5%;
+      font-size: 150%;
+    }
+    .fondu2 p {
+      width: 49.5%;
+      padding: 0.5%;
+      font-size: 150%;
+    }
+    .sous{
+      max-width: 426.66px;
+      top: 61.06px;
+      position: absolute;
+      bottom: auto;
+      left: auto;
+      box-shadow: none;
+    }
+    /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+    .icon-bar {
+      display: block;
+      width: auto;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .icon-bar a {
+    display: block;
+    width: auto;
+    }
 }
-.fondu p {
-  width: 49.5%;
-  padding: 0.5%;
-  font-size: 150%;
-}
-.fondu2 p {
-  width: 49.5%;
-  padding: 0.5%;
-  font-size: 150%;
-}
+
+@media only screen and (min-width: 76px)
