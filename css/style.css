@@ -3,6 +3,9 @@ body{
   padding: 0;
   background-color: #E3ECF5;
 }
+html {
+  scroll-behavior: smooth;
+}
 .hautpage img{
   width: 100%;
 }
@@ -21,13 +24,13 @@ body{
   right: 0;
   bottom: 15px;
   color: white;
-  width: 80%;
+  width: 95%;
 }
 
 h1 {
-  padding: 10px;
+  padding: 5px;
   text-transform: uppercase;
-  font-size: 100%;
+  font-size: 18px;
   color: white;
   font-family: 'Martel', serif;
 }
@@ -79,6 +82,7 @@ nav li:hover{
   font-family: 'Martel', serif;
   color: white;
   cursor: pointer;
+  font-size: 18px;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -115,7 +119,7 @@ nav li:hover{
   font-family: 'Martel', serif;
   text-transform: capitalize;
   color: #365b6d;
-  font-size: 184%;
+  font-size: 25px;
 }
 
 #competence{
@@ -125,7 +129,7 @@ nav li:hover{
   font-family: 'Martel', serif;
   color: #6c9286;
   text-transform: capitalize;
-  font-size: 155%;
+  font-size: 24px;
 }
 .competence{
   margin-top: 5%;
@@ -142,36 +146,41 @@ select:focus {
 }
 .fondu{
   width: 100%;
-}
-.fondu img{
-  width: 95%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  padding-left: 2.5%;
+  background-color: #289dd2;
+  border-radius: 0px 0px 25px 25px;
 }
 .fondu p{
-  width: 95%;
-  padding: 2.5%;
+  width: 78%;
+  padding: 10px 40px;
   font-family: 'Assistant', sans-serif;
-  font-size: 95%;
+  font-size: 22px;
+  color: white;
 }
 .fondu2{
   width: 100%;
+  background-color: #289dd2;
+  border-radius: 0px 0px 25px 25px;
 }
-.fondu2 img{
-  width: 95%;
-  padding-top: 5%;
-  padding-bottom: 2.5%;
-  padding-left: 2.5%;
+.fondu2 img {
+  width: 90%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+}
+.fondu img {
+  width: 90%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
 }
 .fondu2 p{
-  width: 95%;
-  padding: 2.5%;
+  width: 78%;
+  padding: 10px 40px;
   font-family: 'Assistant', sans-serif;
-  font-size: 95%;
+  font-size: 22px;
+  color: white;
 }
 .tabs {
-  padding-top: 2.5%;
   display: block;
   display: -webkit-flex;
   display: -moz-flex;
@@ -189,7 +198,7 @@ select:focus {
   padding-top: 7%;
   padding-bottom: 7%;
   padding-left: 2%;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: capitalize;
   font-family: 'Martel', serif;
 }
@@ -210,11 +219,11 @@ select:focus {
 .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 10px solid #289dd2;
+  border-bottom: 10px solid #365b6d;
 }
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 10px solid #289dd2;
+  border-bottom: 10px solid #365b6d;
   margin: 0;
 }
 .tabs [class^="tab"] [type="radio"]:checked + div,
@@ -261,7 +270,7 @@ select:focus {
   font-family: 'Martel', serif;
   color: #6c9286;
   text-transform: capitalize;
-  font-size: 155%;
+  font-size: 24px;
 }
 .exp{
   margin-top: 5%;
@@ -271,7 +280,7 @@ select:focus {
   border-top-right-radius: 200px;
 }
 div.scrollmenu {
-  background-color: #6c9286;
+  background-color: #365b6d;
   overflow: auto;
   white-space: nowrap;
   width: 100%;
@@ -282,7 +291,7 @@ div.scrollmenu p {
   color: white;
   width: 100%;
   border: 1px solid #289dd2;
-  font-size: 125%;
+  font-size: 20px;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   text-align: center;
@@ -308,7 +317,7 @@ div.scrollmenu p {
   font-family: 'Martel', serif;
   color: #6c9286;
   text-transform: capitalize;
-  font-size: 155%;
+  font-size: 24px;
 }
 .form{
   margin-top: 5%;
@@ -319,26 +328,25 @@ div.scrollmenu p {
 }
 .container {
   overflow: hidden;
-  padding: 20px 10px;
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 }
 
 .container:before {
   content: '';
-  width: 1%;
+  width: 5px;
   height: 100%;
   background: #6c9286;
   position: absolute;
-  left: 20px;
+  left: 18px;
 }
 
 .job {
   background: white;
   padding: 4%;
-  margin: 15% 15%;
-  width: 70%;
+  margin: 40px 56px;
+  width: 207px;
   border-radius: 8px;
   position: relative;
   -webkit-box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
@@ -346,9 +354,9 @@ div.scrollmenu p {
 box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
 }
 
-.job h4 span {
-  font-size: 100%;
-  color: #289dd2;
+.job span {
+  font-size: 25px;
+  color: #365b6d;
 }
 
 .job:before {
@@ -380,7 +388,7 @@ box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
   width: 100%;
 }
 .job h4{
-  font-size: 100%;
+  font-size: 20px;
   font-family: 'Assistant', sans-serif;
   padding-bottom: 4%;
   text-transform: capitalize;
@@ -415,7 +423,7 @@ nav> ul li:hover .sous{
   background-color: #899F11;
 }
 .textnav{
-  font-size: 150%;
+  font-size: 22px;
   font-family: 'Martel', serif;
 }
 
@@ -509,6 +517,90 @@ input{
 .logo img{
   width: 40%;
 }
+@media only screen and (min-width: 767px) {
+    h1{
+      font-size: 35px;
+      padding: 10px;
+    }
+    #telechargement {
+      font-size: 50px;
+    }
+    .button a {
+      font-size: 45px;
+      padding: 20PX;
+      border-radius: 50px;
+    }
+    .button:hover a:after {
+      right: 9px;
+      top: 14px;
+    }
+    .button a:hover {
+      padding: 15PX 46px;
+      border-radius: 50px;
+    }
+    #competence {
+      font-size: 45px;
+    }
+    #exp {
+      font-size: 45px;
+    }
+    .tabs [class^="tab"] label, .tabs [class*=" tab"] label {
+      font-size: 35px;
+    }
+    div.scrollmenu p {
+      font-size: 40px;
+    }
+    .img {
+      height: 400PX;
+    }
+    .img img {
+      height: 400px;
+    }
+    #form{
+      font-size: 45px;
+    }
+    .container:before {
+      content: '';
+      width: 10px;
+      left: 15px;
+    }
+    .job {
+      padding: 6%;
+      margin: 44px 110px;
+      width: 487px;
+      border-radius: 46px;
+    }
+    .job:before {
+      width: 40px;
+      height: 40px;
+      left: -24px;
+    }
+    .job:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    }
+    .job span {
+      font-size: 50px;
+    }
+    .job h4 {
+      font-size: 32PX;
+    }
+    .textnav {
+      font-size: 50px;
+    }
+    .fondu p{
+      padding: 20px 40px;
+      font-size: 40px;
+    }
+    .fondu2 p{
+      padding: 20px 40px;
+      font-size: 40px;
+    }
+    .icon-bar a {
+      font-size: 50px;
+    }
+}
 @media only screen and (min-width: 1024px) {
     nav{
       position: sticky;
@@ -551,10 +643,10 @@ input{
     h1 {
       padding: 10px;
       text-transform: uppercase;
-      font-size: 150%;
+      font-size: 13px;
     }
     #telechargement {
-      font-size: 200%;
+      font-size: 25px;
       margin: 2%;
     }
     button a{
@@ -575,22 +667,6 @@ input{
       padding-bottom: 2%;
       padding-left: 2%;
       font-size: 151%;
-    }
-    .fondu img {
-      width: 45%;
-    }
-    .fondu2 img {
-      width: 45%;
-    }
-    .fondu p {
-      width: 49.5%;
-      padding: 0.5%;
-      font-size: 150%;
-    }
-    .fondu2 p {
-      width: 49.5%;
-      padding: 0.5%;
-      font-size: 150%;
     }
     .sous{
       max-width: 426.66px;
